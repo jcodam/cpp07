@@ -1,9 +1,9 @@
 NAME= program.exe
 
-SRC= main.o Serializer.o
+SRC= main.o 
 SRC+= 
 
-HEADERS= Serializer.hpp Data.hpp
+HEADERS= 
 CC= c++
 
 CPPFLAGS +=	-Wall -Werror -Wextra

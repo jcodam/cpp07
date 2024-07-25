@@ -1,9 +1,9 @@
 NAME= program.exe
 
-SRC= main.o IdClass.o
+SRC= main.o 
 SRC+= 
 
-HEADERS= IdClass.hpp 
+HEADERS= Array.hpp
 CC= c++
 
 CPPFLAGS +=	-Wall -Werror -Wextra
@@ -27,5 +27,7 @@ re:
 
 r: all
 	./$(NAME)
+v: all
+	valgrind ./$(NAME)
 
-.PHONY: all clean fclean re r 
+.PHONY: all clean fclean re r v
