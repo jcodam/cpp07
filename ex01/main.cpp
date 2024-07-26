@@ -1,5 +1,4 @@
 #include <iostream>
-#include "../mycolor.hpp"
 #include "iter.hpp"
 
 int main(void)

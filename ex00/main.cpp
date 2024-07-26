@@ -1,6 +1,5 @@
 #include <iostream>
 #include "Whatever.hpp"
-#include "../mycolor.hpp"
 
 int main(void)
 {

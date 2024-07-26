@@ -101,6 +101,5 @@ int main(int, char**)
         numbers[i] = rand();
     }
     delete [] mirror;//
-    std::cout << "hoi\n";
     return 0;
 }
