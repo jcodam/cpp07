@@ -10,9 +10,9 @@ int main(void)
 	print_array<char>(s, 9);
 	print_array<int>(i, 10);
 	print_array<float>(f, 10);
-	iter<char>(s, 9, &plus_one<char>);
-	iter<int>(i, 10, &plus_one<int>);
-	iter<float>(f, 10, &plus_one<float>);
+	iter<char>(s, 9, plus_one<char>);
+	iter<int>(i, 10, plus_one<int>);
+	iter<float>(f, 10, plus_one<float>);
 	std::cout << std::endl;
 	print_array<char>(s, 9);
 	print_array<int>(i, 10);

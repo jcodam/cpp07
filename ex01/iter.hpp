@@ -1,17 +1,17 @@
 #pragma once
 #include <iostream>
 
-template <typename T>
-void	iter(T* array, size_t len, T (*f)(T)){
-	while (len--)
+template <typename T, typename F>
+void	iter(T* array, size_t len, void (f)(F)){
+	for (size_t index = 0; index < len; index++)
 	{
-		array[len] = f(array[len]);
+		f(array[index]);
 	}
 }
 
 template <typename T>
-T	plus_one(T a){
-	return (++a);
+void	plus_one(T & a){
+	++a;
 }
 
 template <typename T>

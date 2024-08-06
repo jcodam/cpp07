@@ -27,7 +27,7 @@ re:
 
 r: all
 	./$(NAME)
-v: all
+vgrind: all
 	valgrind ./$(NAME)
 
 .PHONY: all clean fclean re r v
